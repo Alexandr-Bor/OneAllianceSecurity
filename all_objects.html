@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+
+	<script src="style/libs/jQuery_1.12.4.min.js"></script>
+	<script src="style/js.js"></script>
+	<script src="style/js_obj.js"></script>
+
+	<title>Объекты</title>
+	</head>
+<body>
+	<section id="header_section">
+		<nav class="navigation">
+			<ul>
+				<li><span>Oбъекты</span></li>
+				<li><a href="all_key.html">Ключи и Коды</a></li>
+			</ul>
+		</nav>
+
+		<form class="form_sorting" action="">
+			<input type="text" id="searchObj">
+			<label for="searchObj">
+				<span id="clear_form">Clear</span>
+			</label>
+		</form>
+	</section>
+
+
+	<ol class="all_objects_security" id="all_objects_security">
+		<li><span class="addr">Бердичевский участок, Бердичев "Страж"</span><span class="obj_num_electric">3(0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченко, 18/2, Кафе 777</span><span class="obj_num_electric">7(0)</span><span class="obj_electric">Electric Name</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченко, 18/2, Кафе 777</span><span class="obj_num_electric">7 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 28/1, офисные помещения</span><span class="obj_num_electric">8 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Строителей, 23, Дом Якина</span><span class="obj_num_electric">22 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13, малочный ларек "рідне село"</span><span class="obj_num_electric">25 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Зеленая, 15, склад Спайк Плюс"</span><span class="obj_num_electric">54 (1)</span></li>
+		<li><span class="addr"><i>с. Осиково,</i> ул. Ленина, 74, Дом Ноумчук</span><span class="obj_num_electric">65 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 93а, АЗС "WOG"</span><span class="obj_num_electric">78 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Володарского, 3, аптека "Ліки-II" ТОВ "Фармия"</span><span class="obj_num_electric">91 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. травнева, 4-а, Дом Пелецкий Д.В.</span><span class="obj_num_electric">92 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. травнева, 4-а, Дом Пелецкий Д.В. (гр. 2 Котельня)</span><span class="obj_num_electric">92 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> 6-й пер. шелушкова, 15а, Бердичев вторресурс</span><span class="obj_num_electric">99 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. русская, 18 кв.50, Квартира Тороп А. В.</span><span class="obj_num_electric">102 (0)</span></li>
+		<li><span class="addr"><i>с. Радянське</i> ул. Щорса, 22, Дом Нижниковой А. В.</span><span class="obj_num_electric">106 (0)</span></li>
+		<li><span class="addr"><i>с. Радянське</i> ул. Щорса, 22, Дом Нижниковой А. В.</span><span class="obj_num_electric">106 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> пер. Червоный пооминь, 15, Дом Семёнова В.Н.</span><span class="obj_num_electric">110 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> пер. Червоный пооминь, 15, Дом Семёнова В.Н. Кабинет.</span><span class="obj_num_electric">110 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 29 кв. 63, Магазин "Джин"</span><span class="obj_num_electric">141 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 29 кв. 63, м-н "Джин"</span><span class="obj_num_electric">141 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Войкова, 12, кв. 17, Квартира Тищенко И.В.</span><span class="obj_num_electric">144 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Войкова, 12, кв. 17, Квартира Тищенко И.В.</span><span class="obj_num_electric">144 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Солдатская, 85, Дом Мисечко Ю.П.</span><span class="obj_num_electric">147 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Солдатская, 85, Дом Мисечко Ю.П.</span><span class="obj_num_electric">147 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 110, Магазин Секонд Хенд</span><span class="obj_num_electric">153 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 110, м-н Секонд Хенд</span><span class="obj_num_electric">153 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 43 кв. 27, Квартира Нижниковой Н.Н.</span><span class="obj_num_electric">154 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Транспортная, 36, Дом Ринкевич А.А.</span><span class="obj_num_electric">158 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Транспортная, 36, дом Ринкевич А.А. (гараж)</span><span class="obj_num_electric">158 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленко, 41ф, Мастерская по переоборудованию авто Бокс №1 (левый)</span><span class="obj_num_electric">160 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленко, 41ф, Мастерская по переоборудованию авто Бокс №2 (правый)</span><span class="obj_num_electric">160 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленко, ул. , Мастерская по переоборудованию авто Офис</span><span class="obj_num_electric">160 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13, Магазин промышленных товаров</span><span class="obj_num_electric">168 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13, Магазин промышленных товаров</span><span class="obj_num_electric">168 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. сестёр Сломницких, 34а, Магазин "Фарби" (вход с права)</span><span class="obj_num_electric">180 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. сестёр Сломницких, 34а, магазин "Продукты" гр.№2 (вход слева)</span><span class="obj_num_electric">180 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Степана Бендеры, 15а кв. 85, Квартира Салабай С.И.</span><span class="obj_num_electric">184 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. бр. Михеевых, 2а кв. 13, Квартира Дизенко</span><span class="obj_num_electric">191 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет, Ларек №9</span><span class="obj_num_electric">228 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 5 кв. 66, Квартира Багинской В.С</span><span class="obj_num_electric">240 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Низгирецкая, 157, Гаражи ПП Бочковский</span><span class="obj_num_electric">246 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Низгирецкая, 157, Гаражи</span><span class="obj_num_electric">246 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 59 кв. 31, Квартира Капралюк</span><span class="obj_num_electric">252 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Ватутина, 36, Автомастерская ПП Куриляк</span><span class="obj_num_electric">262 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Ватутина, 36, Производственный цех (гаражи)</span><span class="obj_num_electric">262 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Ватутина, 36, Автомастерская ПП Куриляк</span><span class="obj_num_electric">262 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 49, Магазин "Смаколики"</span><span class="obj_num_electric">265 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Мира, 5а, Котельня № 53 - КП "Бердичівтеплоенерго"</span><span class="obj_num_electric">269 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Червона, 1, Магазин "Марго"</span><span class="obj_num_electric">270 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 41, Котельня N° 43 - КП "Бердичівтеплоенерго"</span><span class="obj_num_electric">272 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 20 кв. 25, Квартира Гуль С.Л.</span><span class="obj_num_electric">282 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Прорезная, 33 (ковпока), Дом Мельничук Алексей Вячеславович</span><span class="obj_num_electric">284 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Крупской,, Частный дом Качян О.В.</span><span class="obj_num_electric">285 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Крупской,, Частный дом Качян О.В.</span><span class="obj_num_electric">285 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, Вещевой ларек ПП Гуменюк Н. А. (Киоск №7)</span><span class="obj_num_electric">294 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Пионтковского (пересечение), Продуктовый магазин "Анюта"</span><span class="obj_num_electric">298 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 45а, Магазин "Брусиловские колбасы"</span><span class="obj_num_electric">305 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул, Квитнева,, Дом Новицкая</span><span class="obj_num_electric">310 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Квитнева,, Дом Новицкая гр.1 (Дом)</span><span class="obj_num_electric">310 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул, Квитнева,, Дом Новицкая гр. 2 (гараж)</span><span class="obj_num_electric">310 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 92 (р-н детского мира), Гаражный кооператив ПП Повийчук (3-й ряд 8-й гараж)</span><span class="obj_num_electric">311 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Осипенко, 30, Дом Перебийчук А.Л.</span><span class="obj_num_electric">318 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Осипенко, 30, Частный дом Перебийчук А. Л.</span><span class="obj_num_electric">318 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Котовского, 62 кв. 39, Квартира Жуковский Л.З.</span><span class="obj_num_electric">319 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Котовского, 62 кв. 39, Квартира Жуковский Л.З.</span><span class="obj_num_electric">319 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая,, Школа Ыг4</span><span class="obj_num_electric">320 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шалом-Алейхема, 47 кв. 2, Дом Шевчук Н.И.</span><span class="obj_num_electric">329 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> уд. Шалом-Алейхема, 47 кв. 2, Дом Шевчук Н.И.</span><span class="obj_num_electric">329 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 23 кв. 110 (5-й этаж), Квартира Кирилюк С.В.</span><span class="obj_num_electric">337 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 23 кв. 41 (3-й эт. код ПОД. 789), Квартира Петренко А.Ф.</span><span class="obj_num_electric">338 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 86, Центр обслуживания автомобилей "Автомісто"</span><span class="obj_num_electric">339 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 86, Центр обслуживания автомобилей гр. № 1</span><span class="obj_num_electric">339 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 86, Центр обслуживания автомобилей гр. № 2</span><span class="obj_num_electric">339 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, Чумак П.И., Магазин "Пегас”</span><span class="obj_num_electric">346 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Дзержинского, 17, Гараж №1</span><span class="obj_num_electric">362 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Дзержинского, 17, Гараж №2</span><span class="obj_num_electric">362 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. героев Украины, 17, Вебсервис</span><span class="obj_num_electric">389 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 59 кв. 5 (1й, Квартира Саковской Г.Н.</span><span class="obj_num_electric">394 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Русская, 4, Магазин "Непрод. товаров"</span><span class="obj_num_electric">396 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 68а, Магазин "Автозупинка" Автопарк</span><span class="obj_num_electric">399 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 79, Магазин "Белоруские сладости"</span><span class="obj_num_electric">403 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 11/1 кв. 18, Квартира Лугова И.А.</span><span class="obj_num_electric">410 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. сестёр Сломницких, 34, Магазин "Фарби-1"</span><span class="obj_num_electric">421 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола,, Магазин "Секонд Хенд" Торговый Центр ПП Кущак</span><span class="obj_num_electric">429 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола,, Торговый центр ПП Кущак</span><span class="obj_num_electric">429 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола,, Магазин "Секонд Хенд" Торговый Центр ПП Кущак</span><span class="obj_num_electric">429 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Романа Абрамова, 8 (бывшая- 60 летия СССР), Дом Ярославець Л.Н.</span><span class="obj_num_electric">435 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Романа Абрамова, 8 (бывшая- 60 летия СССР), Дом Ярославець Л.Н. гараж</span><span class="obj_num_electric">435 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Красина, 23, Дом Томашевских</span><span class="obj_num_electric">439 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Красина, 23, Дом Томашевских Гр1.(1-й этаж)</span><span class="obj_num_electric">439 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Красина, 23, Дом Томашевских Гр.2 (2-й этаж)</span><span class="obj_num_electric">439 (2)</span></li>
+		<li><span class="addr"><i>с. Гардышовка</i> ул. Молодежная, 41, Дом Антипова</span><span class="obj_num_electric">440 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленка, 39о, Магазин "ТехноЛидер" + м-н "Двери"</span><span class="obj_num_electric">454 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13, Кооперативный рынок</span><span class="obj_num_electric">458 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Семеновская, 23а кв. 57, Квартира Щесняк И.В.</span><span class="obj_num_electric">467 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола, 9 Чумак П.И., Берд, місцевий центр з надання безоплат. вторинної допомоги</span><span class="obj_num_electric">469 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола, 9 Чумак П.И., Берд, місцевий центр з надання безоплат. вторинної допомоги</span><span class="obj_num_electric">469 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Грушевского, 17а, Квартира Мустафаевой</span><span class="obj_num_electric">475 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чорновола, 18 (киоск в виде стакана) Новоржицкий С., кафе "Шари Кава" "Sharikava”</span><span class="obj_num_electric">480 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. житниченко, 57, Дом Захарчук</span><span class="obj_num_electric">498 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы       Чумак П.И., Ларек №3/1</span><span class="obj_num_electric">504 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Садовая, 7 кв. 6, Дом Евтушевского В.П.</span><span class="obj_num_electric">516 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Граничная,, Дом Ковальчук Т.Ю.</span><span class="obj_num_electric">537 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 106, кв. 72, Квартира Бялошицкий А. О.</span><span class="obj_num_electric">540 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. М.Грушевского, 8ж, магазин "Все для дома"</span><span class="obj_num_electric">545 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Торговый Центр Шевченковский</span><span class="obj_num_electric">547 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Магазин "Три-дэ" гр. №2</span><span class="obj_num_electric">547 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Магазин "Белья" гр. №3</span><span class="obj_num_electric">547 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Торговый Центр Шевченковский</span><span class="obj_num_electric">547 (4)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, кафе "Шари Кава" "Sharikava"</span><span class="obj_num_electric">547 (5)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Торговый Центр Шевченковский</span><span class="obj_num_electric">547 (6)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 16, Торговый Центр Шевченковский</span><span class="obj_num_electric">547 (7)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Жовтнева, 61, Дом Кущак Г. Г.</span><span class="obj_num_electric">548 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 28, офис Адвокатов</span><span class="obj_num_electric">563 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Лупова, 14 кв. 48, Квартира Закревских</span><span class="obj_num_electric">568 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Дружбы, 1, Дом Нехворовский Н.А.</span><span class="obj_num_electric">588 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Дружбы, 1, дом Нехворовский Н.А. Баня</span><span class="obj_num_electric">588 (2)</span></li>
+		<li><span class="addr"><i>с. Семеновка</i> ул. Урожайная, 53, Дом Дмитрук</span><span class="obj_num_electric">589 (0)</span></li>
+		<li><span class="addr"><i>с. Иванковци</i> ул. Героев небесной сотни, 2а, Дом Грачева</span><span class="obj_num_electric">591 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. сестер Сломницких, 2 кв. 81 (код, Квартира Гуменюк О.Н.</span><span class="obj_num_electric">607 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Новоивановская, 79, Дом Примак В. А.</span><span class="obj_num_electric">609 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 78а, ПП Муляр Я. Гаражи</span><span class="obj_num_electric">623 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Пушкина, 71д, Дом Пахоливецкий В.А.</span><span class="obj_num_electric">627 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Пушкина, 71д, Дом Пахоливецкий В.А. гараж</span><span class="obj_num_electric">627 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> поселок элинг, Дом Сидлецкого Ю.Ф.</span><span class="obj_num_electric">644 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Евгена Старикова, 13 кв. 66, Квартира Грицюк Д.В.</span><span class="obj_num_electric">648 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 107, ТОВ "Ласка Бердичев" офис</span><span class="obj_num_electric">650 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 107, ТОВ "Ласка Бердичев" Складские помещения</span><span class="obj_num_electric">650 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 39 кв. 22, Квартира Лисюк С.С.</span><span class="obj_num_electric">654 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул, Европейская, 32/1 кв. 9, Квартира Микулич</span><span class="obj_num_electric">689 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Владимирская, 20, Головенко А.А.</span><span class="obj_num_electric">690 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, Ларек Одежды №12</span><span class="obj_num_electric">696 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> с. Романовка, ул. Луганская, 66а, Дом Капралюк М.В.</span><span class="obj_num_electric">706 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пл. Соборная, 19 кв. 9, Квартира Глейзер</span><span class="obj_num_electric">707 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 71, Офис партии "Смешко"</span><span class="obj_num_electric">719 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Ватутина, 8ж, Торговый Дом " Милениум + " (каб. Директора)</span><span class="obj_num_electric">720 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Соборная, 51а, Дом Длугач</span><span class="obj_num_electric">723 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 5 кв. 57, Квартира Вильман С.Ю.</span><span class="obj_num_electric">726 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 35б, Офисный центр "Квадрат"</span><span class="obj_num_electric">729 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 32/1, Магазин "Алло"</span><span class="obj_num_electric">734 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 20 кв. 5, Квартира Романенко</span><span class="obj_num_electric">735 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Сечевых стрельцов, 21, Детский садик</span><span class="obj_num_electric">745 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. ширшова, 2/8, Магазин "Фрутис"</span><span class="obj_num_electric">762 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пер. котляревского, 6 кв. 29, Квартира Данылюк</span><span class="obj_num_electric">763 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 49, Аптека "Санитас"</span><span class="obj_num_electric">765 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Валерия Дидковского, 26 кв. 4, Дом Лосовского Г.Й.</span><span class="obj_num_electric">778 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Валерия Дидковского, 26 кв. 4, Дом Лосовского Г.Й.</span><span class="obj_num_electric">778 (1)</span></li>
+		<li><span class="addr"><i>с. Романовка</i> ул. Воронцова, 8, Детский сад "Барвинок"</span><span class="obj_num_electric">783 (0)</span></li>
+		<li><span class="addr"><i>с. Осиково</i> ул. победы, 3, Детский сад "Дзвиночок"</span><span class="obj_num_electric">784 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. короленко, 41п, Складские помещения</span><span class="obj_num_electric">786 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. короленко, 41п, Складские помещения</span><span class="obj_num_electric">786 (1)</span></li>
+		<li><span class="addr"><i>с. Семеновка</i> ул. урожайная,, Дом Матвейчук</span><span class="obj_num_electric">789 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пер. червоный проминь, 12 (пер. Щорса, 33), Дом Семенов</span><span class="obj_num_electric">790 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. садовая,, офис Лесис-ТАС</span><span class="obj_num_electric">796 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13 (на тер., Магазин "Мерелин"</span><span class="obj_num_electric">803 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 2/12, Киоск "Курка-Чоботурка"</span><span class="obj_num_electric">813 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 19/10, Кафе "Їжак"</span><span class="obj_num_electric">828 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. молодогвардейская, 10 кв. 57, Квартира Вахницкой</span><span class="obj_num_electric">840 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. лилии коростояновой, 22, Производственные помещения ТОВ "ПАССО"</span><span class="obj_num_electric">842 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 36/1 кв. 32, Квартира Шевчук И.З.</span><span class="obj_num_electric">863 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 47 кв. 1, , Квартира Аступ А. О.</span><span class="obj_num_electric">883 (0)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>с. Иванковци</i> ул. школьная, 36, Дом Мазур О. С.</span><span class="obj_num_electric">890 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. здоровья, 2, кв. 87 (код подъезда 359), Квартира Стецюк И.В.</span><span class="obj_num_electric">891 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пер. Почтовый, 8а кв. 18, Квартира Баньковский А.Л.</span><span class="obj_num_electric">912 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, Магазин (р-н Базара) 3-й этаж</span><span class="obj_num_electric">927 (1)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, Магазин (р-н Базара) 2-й этаж</span><span class="obj_num_electric">927 (2)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, Магазин (р-н Базара) котельня</span><span class="obj_num_electric">927 (3)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, М-н "Конфискат"</span><span class="obj_num_electric">927 (4)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, Магазин (р-н Базара) ПС</span><span class="obj_num_electric">927 (5)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Толстого, 4, Магазин (р-н Базара) 1-й этаж</span><span class="obj_num_electric">927 (6)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>с. Хмельове</i> ул. центральная,, Детский садик</span><span class="obj_num_electric">932 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пер. трудовой, 22 Кодинец А.А., Дом Фурсал</span><span class="obj_num_electric">933 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. житомирвская, 43, Квара-маркет м-н Пиво, вода</span><span class="obj_num_electric">940 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 3/13, Магазин ЗАТ "Житомирські Ласощі"</span><span class="obj_num_electric">943 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Крылова, 27 Чумак П.И., Дом Лысюк Д.Ю.</span><span class="obj_num_electric">953 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 4 Кодинец А.А., Магазин Спорттовары</span><span class="obj_num_electric">961 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чапаева, 3/5 кв. 15, Квартира Чернявского</span><span class="obj_num_electric">974 (0)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 55/2 кв. 7, Квартира Шершетинский В.А.</span><span class="obj_num_electric">983 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. травнева, 6, Дом Лисюк Д.Ю.</span><span class="obj_num_electric">988 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. травнева, 6, Дом Масюк Д.Ю.</span><span class="obj_num_electric">988 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. травнева, 6, Дом Масюк Д.Ю. - гараж</span><span class="obj_num_electric">988 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. здоровья, 1 Чумак П.И., Центральная городская больница Гаражи</span><span class="obj_num_electric">989 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 98, Гаражи</span><span class="obj_num_electric">990 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. белопольская, 19, Дом Тимчинский А.Е</span><span class="obj_num_electric">991 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. петровского, 8, Кафе</span><span class="obj_num_electric">994 (1)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. петровского, 8, Автосервис</span><span class="obj_num_electric">994 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 114, Бердичев Пивзавод</span><span class="obj_num_electric">2006 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Карла Либкнехта, 26, Офисный центр "Оноре де Бальзак"</span><span class="obj_num_electric">2009 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. казацкая, 54 Олейник О., Кафе Гетьман</span><span class="obj_num_electric">2014 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. низгирецкая, 100, ТОВ "ПрогрессГруп" (админздание)</span><span class="obj_num_electric">2019 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 14а, Магазин "Watsons"</span><span class="obj_num_electric">2026 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. героев украины (ул. дзержинского), 79, Интернат дитей сирот</span><span class="obj_num_electric">2037 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 23, Магазин "Автозвук 23"</span><span class="obj_num_electric">2038 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 56, Новая почта отд. №3</span><span class="obj_num_electric">2043 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченко, 23 Олейник О., ПАТ Кредиагрикольбанк</span><span class="obj_num_electric">2049 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Ватутина 8ж, Магазин "Меблева фурнітура"</span><span class="obj_num_electric">2096 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 114, Пивзавод (Цех розлива минеральных вод)</span><span class="obj_num_electric">2110 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 122, Стоматология Мистер Дент</span><span class="obj_num_electric">2121 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул, Европейская, 132, отд. Нова Пошта + м-н Продукты</span><span class="obj_num_electric">2122 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. индустриализации, 5, ТОВ "Неком" Лаборатория</span><span class="obj_num_electric">2220 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Ленина, 193а, Розваж.комплекс "У свата"</span><span class="obj_num_electric">2228 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Цабика, 1а Олейник О., АЗС "Деноил"</span><span class="obj_num_electric">2245 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Свердлова,, Общежитие ПЄД коледжа</span><span class="obj_num_electric">2248 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Карла Либкнехта, 79, ВАТ Бердичевский машиностроительный завод "Прогрес"</span><span class="obj_num_electric">2251 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 28/1, Укртелеком №1</span><span class="obj_num_electric">2257 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 28/1, Укртелеком ПКП №2</span><span class="obj_num_electric">2257 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Семеновская, 23  Чумак П.И., Кофейня ОС</span><span class="obj_num_electric">2265 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Семеновская, 23  Чумак П.И., Кофейня</span><span class="obj_num_electric">2265 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Соборная, 18 Кодинец А.А., Магазин "Полесье Продукт"</span><span class="obj_num_electric">2278 (0)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Красный луч,, Гришковецкая гимназия</span><span class="obj_num_electric">2284 (0)</span></li>
+		<li><span class="addr"><i>Бердичевский район</i> ул. Житомирская, 193а, Оздоровительный комплекс "Робинзон"</span><span class="obj_num_electric">2314 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 76, ДП Ритм ТОВ "Рост"</span><span class="obj_num_electric">2317 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 43, ТОВ "Независимая лаборатория Инвитро"</span><span class="obj_num_electric">2333 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленко, 39б, Швейная Мастерская</span><span class="obj_num_electric">2339 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 11, Кафе "Оскар"</span><span class="obj_num_electric">2366 (0)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Индустриальная, 5, ТОВ "ТИС Полісся"</span><span class="obj_num_electric">2372 (1)</span></li>
+		<li><span class="addr"><i>Бердичевское шоссе</i> 4 (поворот на с. Заречаны), Магазин "Будмаркет квадратный метр"</span><span class="obj_num_electric">2375 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Володарського, 65, ТОВ "Три Медведя"</span><span class="obj_num_electric">2385 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Котовского, 40/1, Магазин "Watsons"</span><span class="obj_num_electric">2392 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 26/2, Ломбард Региональный</span><span class="obj_num_electric">2397 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Петровского, 8, СТО + Кафе</span><span class="obj_num_electric">2401 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 49, Аптека "Санитас"</span><span class="obj_num_electric">2417 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Козацька, 3, Магазин "Сокол"</span><span class="obj_num_electric">2427 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 12, АТ КБ "Приватбанк"</span><span class="obj_num_electric">2452 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пл. Соборная, 20, Новая Почта - отделение № 4</span><span class="obj_num_electric">2459 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Котляревского, 2, Новая Почта - отделение № 5</span><span class="obj_num_electric">2460 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 49, Новая Почта - отделение № 2</span><span class="obj_num_electric">2467 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (базар), Киоск Бытовой техники ФОП Кирилюк (киоск №1)</span><span class="obj_num_electric">7014 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 45 кв. 4, Квартира Бондарь В. А.</span><span class="obj_num_electric">7015 (1)</span><span class="obj_electric">Соколовский С.</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> НовоИвановская, 44. кв. 39, Квартира Слюсаренко О.Н.</span><span class="obj_num_electric">7021 (0)</span></li>
+		<li><span class="addr"><i>с. Хажин</i> ул. Мостового, 25, Дом Черноус Е.В.</span><span class="obj_num_electric">7024 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Вокзальная, 1а, Магазин Точка минимальных цен</span><span class="obj_num_electric">7030 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 39, Парикмахерская "София"</span><span class="obj_num_electric">7036 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 84, Магазин "Смаколики"</span><span class="obj_num_electric">7037 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Здоровья, 36/49, Дом Шпичак Т.А.</span><span class="obj_num_electric">7059 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 60 кв. 67, Квартира Шпичак Т.А.</span><span class="obj_num_electric">7061 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 5/7, кафе" Нове місце"</span><span class="obj_num_electric">7068 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 5/7, кафе "Хаус"</span><span class="obj_num_electric">7068 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 5/7, кафе" Нове місто"+кафе "Хаус"</span><span class="obj_num_electric">7068 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 5/7, Ларек</span><span class="obj_num_electric">7068 (4)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 46 кв. 160, Квартира Холондерёв Ю.В.</span><span class="obj_num_electric">7070 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. м. Расковой, 23б, Библиотека</span><span class="obj_num_electric">7077 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 45 кв. 1, Квартира Прокопчук В.В.</span><span class="obj_num_electric">7078 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Даниловская, 23, м-н Окна Максимум"</span><span class="obj_num_electric">7086 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 32, кафе "Шари Кава" "Sharikava"</span><span class="obj_num_electric">7088 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (киоск возле базара), Магазин Верхней Одежды (Киоск № 8)</span><span class="obj_num_electric">7112 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченка, 23, Админздание КП "Бердичівтеплоенерго"</span><span class="obj_num_electric">7123 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Русская, 14, Гараж Радчук А.</span><span class="obj_num_electric">7131 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 107, ТОВ "Ласка Бердичев" Кабинет Директора</span><span class="obj_num_electric">7139 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 32/1, Торговый киоск ПП Синельникова (Киоск №3)</span><span class="obj_num_electric">7140 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Привокзальная, 3, Склад Сахара</span><span class="obj_num_electric">7145 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 23а, Кафе "Амстердам"</span><span class="obj_num_electric">7146 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Короленка, 39о, м-н Автоткань</span><span class="obj_num_electric">7165 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая,, Технобаза</span><span class="obj_num_electric">7173 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 19/1, Магазин Антей</span><span class="obj_num_electric">7177 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Огибна, 19, Дом Коломиец</span><span class="obj_num_electric">7179 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Русская, 12 кв. 120, Квартира Далёкий М.Н.</span><span class="obj_num_electric">7183 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченко, 23, Территориальный центр</span><span class="obj_num_electric">7187 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Шевченко, 23, Территориальный центр</span><span class="obj_num_electric">7187 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чкалова, 15, Офис ПП "Фильтр медиа" ПП Толкач</span><span class="obj_num_electric">7188 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 66 кв. 101, Квартира Ким А.А.</span><span class="obj_num_electric">7190 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, (р-н рынок), Ларек Бытовой техники ПП Марценюк (Киоск №5)</span><span class="obj_num_electric">7192 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Молодогвардейская (возле кафе заманихи), Гараж №11 Кирилюк С.В.</span><span class="obj_num_electric">7196 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (базар), ПП Полимова Киоск № 6</span><span class="obj_num_electric">7201 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (базар), ПП Митник И.В. Киоск №2</span><span class="obj_num_electric">7206 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (базар), Киоск №4 "Спорт Одежда"</span><span class="obj_num_electric">7213 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> пер. Тихий, 2а, Магазин "Диана"</span><span class="obj_num_electric">7216 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Гетьмана Мазепы, 29 кв. 85, Квартира Калинчук Э.А.</span><span class="obj_num_electric">7219 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Хохяйственная, 6/1, Дом Левчук</span><span class="obj_num_electric">7225 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Медична, 7, ТОВ "Память"</span><span class="obj_num_electric">7237 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 18, Аптека</span><span class="obj_num_electric">7241 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Офисные помещения ПП Голубничий</span><span class="obj_num_electric">7245 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Красовский В.М.</span><span class="obj_num_electric">7245 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Неизвестно арендатор</span><span class="obj_num_electric">7245 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Богайчук В. В.</span><span class="obj_num_electric">7245 (4)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Коваль Галина Сергеевна</span><span class="obj_num_electric">7245 (5)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Голубничий Сергей Анатольевич</span><span class="obj_num_electric">7245 (6)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 53, Кабинет Солоп Игорь Васильевич</span><span class="obj_num_electric">7245 (7)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Гоголя, 19, Магазин продуктов "Сварог"</span><span class="obj_num_electric">7248 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Войкова, 97/1, Магазин продуктов "Сварог"</span><span class="obj_num_electric">7249 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Красина 1/2, Магазин "Свитанок"</span><span class="obj_num_electric">7250 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 111 (ринок), Кафе "їжачок"</span><span class="obj_num_electric">7252 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Каростояновой, 29, Магазин "Нептун"</span><span class="obj_num_electric">7257 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Котовского, 53 кв. 3, Квартира Повнич В.П.</span><span class="obj_num_electric">7264 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул Шевченка, 28а, Дом Бланшевского</span><span class="obj_num_electric">7266 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Гагарина, 15, Дом Лысюк В.В.</span><span class="obj_num_electric">7269 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Червоний Промінь. 1, Продовольственно киоск</span><span class="obj_num_electric">7275 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 111/2, Магазин "Продовольчий Кошик"</span><span class="obj_num_electric">7276 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 4, Магазин Бердичев Хлеб</span><span class="obj_num_electric">7279 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Фрунзе, 5а, Магазин бытовой химии Бриз</span><span class="obj_num_electric">7284 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 84, Магазин Техномастер</span><span class="obj_num_electric">7314 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Ашербекова, 8/20, Дом Копыця Р.Н.</span><span class="obj_num_electric">7325 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 2/12, ларёк "Субпродукты"</span><span class="obj_num_electric">7373 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Белопольская, 119, Столярный цех</span><span class="obj_num_electric">7381 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковци</i> ул. Ватутина, 18/1, Дом Синько</span><span class="obj_num_electric">7400 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11, Салон магазин Сити Фото</span><span class="obj_num_electric">7425 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11, магазин Мида</span><span class="obj_num_electric">7425 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. садовая, 25-, магазин Полесье Продукт (Калина)</span><span class="obj_num_electric">7426 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 9 Олейник О., Магазин Меркурий гр. 1</span><span class="obj_num_electric">7427 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 9 Олейник О., Магазин Находка группа 2</span><span class="obj_num_electric">7427 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11, Офис радио Лайф ФМ 102,0</span><span class="obj_num_electric">7430 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11, Офис Полтарин</span><span class="obj_num_electric">7430 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11 Ц, Ателье</span><span class="obj_num_electric">7430 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 11, Общее помещение-Лайф ФМ , Полтарин, Ателье</span><span class="obj_num_electric">7430 (4)</span></li>
+		<li><a href="data/kosogorskogo16.html"><span class="addr"><i>г. Бердичев</i> ул. Косогорского, 16, Дом Глейэер А.А.</span></a><span class="obj_num_electric">7439 ()</span><a href="all_key.html" class="link_key"></a></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Чкалова, 10, Дом Шафранский И.А.</span><span class="obj_num_electric">7441 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Братьев Михеевых, 6 кв. 112, Квартира Олишевска В.П.</span><span class="obj_num_electric">7446 ()</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> пер. 2-й Каштановый, 89, дом Катеруша П.В.</span><span class="obj_num_electric">7462 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Прорезная, 28 кв. 1, дом Ружицкого О.Б.</span><span class="obj_num_electric">7479 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 13, Трансформаторная подстанция "Полесье продукт"</span><span class="obj_num_electric">7481 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы (возле рынка), Ларек №10 ФОП Гаманчук Ю.П.</span><span class="obj_num_electric">7482 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 120, Магазин "Хлеб"</span><span class="obj_num_electric">7483 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Соборная, 17, кв. 40, Квартира Чайка А С.</span><span class="obj_num_electric">7487 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> с. Осиково, ул. Михайлова, 1, кафе "Територия смаку"</span><span class="obj_num_electric">7493 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Садовая,, Интернет магазин</span><span class="obj_num_electric">7508 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> уд. Житомирская. 13 (базар), Ларек №11 (обувь)</span><span class="obj_num_electric">7513 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул, Урожайная,, Дом Лисюк Ригина</span><span class="obj_num_electric">7515 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Урожайная,, Дом Лисюк Ригина (гараж)</span><span class="obj_num_electric">7515 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> смт. Гришковцы, пер. Ватутина, 6/8, Дом Заремба В А.</span><span class="obj_num_electric">7522 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Винницкая, 65 кв 23, Квартира Мельник С Ю</span><span class="obj_num_electric">7537 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул Ватутина 91/11, Мини маркет</span><span class="obj_num_electric">7549 ()</span></li>
+		<li><a href="data/chudnovska_158_garage_2_rakut.html"><span class="addr"><i>г. Бердичев</i> ул. Чудновская, 156 (кооператив №9), Гараж №2 ПП Ракуть</span><span class="obj_num_electric">7553 ()</span></a></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Червона, 1 (на територии м-на "монро), Дом Кучерявый С.</span><span class="obj_num_electric">7554 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 28/1, Офис адвокат Кравец Н А.</span><span class="obj_num_electric">7559 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Козацкая, 3, Магазин "ЗД"</span><span class="obj_num_electric">7564 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. козацкая, 3, Магазин "Белорусские сладости"</span><span class="obj_num_electric">7564 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Королева, 20, Дом Пупко О. Н.</span><span class="obj_num_electric">7589 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> район элинг кооператив №7, Гаражный кооператив №7, Гараж №760</span><span class="obj_num_electric">7607 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Петровского, 1, ФОП "Филипов"</span><span class="obj_num_electric">7617 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Петровского, 1, ФОП "Филипов"</span><span class="obj_num_electric">7617 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Свердлова 67, кв 10, Квартира Невеский Д В</span><span class="obj_num_electric">7621 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Горького, 20, Дом Козлачков С. В.</span><span class="obj_num_electric">7622 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чудновская, 154а (гаражный кооператив), Гараж №280-281</span><span class="obj_num_electric">7626 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Чудновская, 154а (автокооператив №6), Гараж №298, 299, 300</span><span class="obj_num_electric">7628 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Джозефа Конрада. 2 кв. 5, Квартира Ярушинсий В Ю</span><span class="obj_num_electric">7670 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 42, Городская поликлинника для взрослых</span><span class="obj_num_electric">7684 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 42, Городская поликлинника для взрослых</span><span class="obj_num_electric">7684 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 42, Городская поликлинника для взрослых</span><span class="obj_num_electric">7684 ()</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 42, Городская поликлинника для взрослых</span><span class="obj_num_electric">7684 ()</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Житомирская, 44, Магазин "Зодиак"</span><span class="obj_num_electric">7685 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Старый путь, 2а (код калитки 7), Дом Глибко Ю.Н.</span><span class="obj_num_electric">7696 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Европейская, 128, кв. 23, Квартира Соколовский С.Ф.</span><span class="obj_num_electric">7706 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Полевая, 76, Дом Мазур А.С.</span><span class="obj_num_electric">7709 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22-в, Торгово-офисный центр</span><span class="obj_num_electric">7719 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Богдана Хмельницкого, 5а, кв. 2, Квартира Семаненко Е.В.</span><span class="obj_num_electric">7752 (0)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 38, Кафе-магазин "їжачок"</span><span class="obj_num_electric">7758 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 55а, кв. 33, Квартира Шитова С.А.</span><span class="obj_num_electric">7759 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. 30 лет победы, 7, м-н" Техно Бум"</span><span class="obj_num_electric">7768 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> ул. Старый шлях, 51, Дом Олянюк Я.В. (код калитки 5)</span><span class="obj_num_electric">7770 (1)</span></li>
+		<li><span class="addr"><i>пгт. Гришковцы</i> пер. Мира, 8, Дом Олянюк Г.П. (ключ у ГБР)</span><span class="obj_num_electric">7771 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (1)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (2)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (3)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (4)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (5)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (6)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Одесская, 22, ТЦ "Форум"</span><span class="obj_num_electric">7773 (7)</span></li>
+		<li><span class="addr"><i>г. Бердичев</i> ул. Железнодорожная, 32, Гараж №4</span><span class="obj_num_electric">7782 (1)</span></li>
+
+		<li><a href="data/zitom_76.html"><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 76, Стоп Транзит</span><span class="obj_num_electric"></span></a></li>
+		<li><a href="data/zitom_78.html"><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 78, Автоцентр</span><span class="obj_num_electric"></span></a></li>
+		<li><a href="data/shaliakin_98_2.html"><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 98, Шалякин, Автомайстерня</span><span class="obj_num_electric"></span></a></li>
+		<li><a href="data/file23.html"><span class="addr"><i>г. Бердичев</i> ул. Житомирская, 98, Шалякин, Гаражи</span><span class="obj_num_electric"></span></a></li>
+		<li><a href="data/popelushka.html"><span class="addr"><i>г. Бердичев</i> ул. Житомирская. Попелюшка (Заезд Старая проходная Кож Завода)<span class="obj_num_electric"></span></a></li>
+		<li><a href="data/korolenko_39o_autotkanini.html"><span class="addr"><i>г. Бердичев</i> ул. Короленко 39-о. Автотканини<span class="obj_num_electric"></span></a></li>
+		<li><a href="data/nizgireckaya_16.html"><span class="addr"><i>г. Бердичев</i> ул. Низгирецкая, 16, Сенаторов<span class="obj_num_electric"></span></a></li>
+
+	</ol>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+
+	<script src="style/libs/jQuery_1.12.4.min.js"></script>
+	<script src="style/js.js"></script>
+	<script src="style/js_obj.js"></script>
+
+	<title>Ключи и Коды</title>
+</head>
+
+<body>
+	<section id="header_section">
+		<nav class="navigation">
+			<ul>
+				<li><a href="all_objects.html">Объекты</a></li>
+				<li><span>Ключи и Коды</span></li>
+			</ul>
+		</nav>
+
+		<form class="form_sorting" action="">
+			<input type="text" id="searchObj">
+			<label for="searchObj">
+				<span id="clear_form">Clear</span>
+			</label>
+		</form>
+	</section>
+
+	<ol class="all_objects_key" id="all_objects_security">
+
+
+		<!-- В текстовом файле нужно соблюдать порядок записи: 
+				№
+				цвет
+				улица
+				Имя
+				город
+				код
+				комментарий -->
+
+		<li>
+			<span class="clr clr_black_br">	</span>
+			1 
+			<span class="addr">Короленка, 19а, Шевченко</span>
+		</li>
+		<li><span class="clr clr_green">	</span>2 <span class="addr">Одеська 40а, Максимум</span></li>
+		<li><span class="clr clr_black_br">	</span>3 <span class="addr">Пушкіна 95а, Автостоянка</span></li>
+		<li><span class="clr">				</span>4 <span class="addr"><i class="kod">(код дверей 4162)</i> Будьоного 15/31, Михнюк</span></li>
+		<li><span class="clr clr_black_br">	</span>5 <span class="addr">Огібна 19, Коломієць</span></li>
+		<li><span class="clr clr_black_br">	</span>6 <span class="addr">Володарського 23, Хохлов</span></li>
+		<li><span class="clr clr_black_br">	</span>7 <span class="addr">Чкалова (Степана Бендери) 15а, ФільтрМедіа</span></li>
+		<li><span class="clr clr_black_br magnit"></span>8 <span class="addr">Житомирська 46 кв. 160, Халандирьов (таблетка)</span></li>
+		<li><span class="clr clr_black_br">	</span>9 <span class="addr">Зелена 15 склад, коричневі двері, "Спайк Плюс" (без ключа)</span></li>
+		<li><span class="clr clr_black_br">	</span>10 <span class="addr">Гоголя 19, магазин "Сварог" (без ключа)</span></li>
+		
+		<li>
+			<span class="clr clr_black_br"></span>
+			11
+			<span class="addr">
+				<i class="kod">
+					(код 2231)
+				</i>
+				Дзержинського 17 кв 87, Толстуха таблетка
+			</span>
+		</li>
+		
+		<li>
+			<span class="clr clr_black_br"></span>
+			12
+			<span class="addr">
+				<i>Гришківці</i>
+				, Чапаєва 102, Діхтяр (?)
+			</span>
+		</li>
+		
+		<li><span class="clr clr_white">	</span>13 <span class="addr">Котовського (Одеська) 55, Лонжерон</span></li>
+		<li><span class="clr">				</span>14 <span class="addr"><i class="kod">(калітка код 138)</i> Пушкінська 99</span></li>
+		<li><span class="clr clr_blue_raya"></span>15 <span class="addr">Садова 39, "Рая"</span></li>
+		<li><span class="clr clr_black_br">	</span>16 <span class="addr"><i>Радянське</i>, Бердичівська 102, Сенаторов</span></li>
+		<li><span class="clr clr_black_br">	</span>17 <span class="addr">Хозяйственная 6/1</span></li>
+		<li><span class="clr clr_black_br">	</span>18 <span class="addr"><i>Радянське</i>, Бердичівська 65</span></li>
+		<li><span class="clr clr_vtorsyrovyna"></span>19 <span class="addr">пров. Семенівський 15а, "Вторсировина"</span></li>
+		<li><span class="clr">				</span>20 <span class="addr">Короленко, "Ринок" НКС</span></li>
+		<li><span class="clr clr_white">	</span>21 <span class="addr">Річна 24</span></li>
+		<li><span class="clr clr_red">		</span>22 <span class="addr">Одеська 22, Т.Ц.</span></li>
+		<li><a href="data/file23.html">		<span class="clr clr_red"></span>23 <span class="addr">Житомирська 98 (гаражи, цех шкіри) ворота</span></a></li>
+		<li><span class="clr clr_red">		</span>24 <span class="addr">Нізгірецька 59, "Продмаг"</span></li>
+		<li><span class="clr">				</span>25 <span class="addr"><i class="kod">(код 138)</i> Руська 18 кв 50</span></li>
+		<li><span class="clr">				</span>26 <span class="addr"><i class="kod">(код 409)</i> Руська 18 кв 98</span></li>
+		<li><span class="clr clr_green">	</span>27 <span class="addr">Пушкіна 71д, Пахолівецький</span></li>
+		<li><span class="clr clr_yellow">	</span>28 <span class="addr">Сестер Сломницьких (Здоровья) 34а, магазин "Фарби"</span></li>
+		<li><span class="clr clr_blue">		</span>29 <span class="addr">Семенівська (Шелушкова) 23 кв. 57, Щесняк</span></li>
+		<li><span class="clr">				</span>30 <span class="addr"><i class="kod">(код 260)</i> Житомирська 39 кв. 22, Лисюк</span></li>
+		<li><span class="clr clr_white">	</span>31 <span class="addr">30 річчя перемоги 5 кв. 57, Вільман</span></li>
+		<li><span class="clr clr_white">	</span>32 <span class="addr">Володимирська 20, будинок Головенко</span></li>
+		<li><span class="clr">				</span>33 <span class="addr"><i class="kod">(код дверей 258)</i> Європейська 20 кв. 5</span></li>
+		<li><span class="clr clr_yellow">	</span>34 <span class="addr"><i>Гришківці</i> пер. Миру (Дзержинського) 8, Олянюк</span></li>
+		<li><span class="clr clr_red">		</span>35 <span class="addr">Серова 4, Кукуруза</span></li>
+		<li><span class="clr clr_red">		</span>36 <span class="addr">Братів Михеєвих 2а кв. 13, Дізенко</span></li>
+		<li><span class="clr clr_green">	</span>37 <span class="addr"><i class="kod">(код - 789 або 259)</i>Шевченко 23 кв. 102, кв. 110, кв. 44</span></li>
+<!--		<li><span class="clr clr_black_br"></span>38 <span class="addr"><i class="kod"></span></li>-->
+		<li><span class="clr clr_red">		</span>38 <span class="addr">Вінницька 5/2 "Техносклад"</span></li>
+		<li><span class="clr clr_red">		</span>39 <span class="addr">Транспортна 36, Ринкевич</span></li>
+		<li><span class="clr clr_red">		</span>40 <span class="addr">Олімпійська (Сабурова) 19</span></li>
+		<li><span class="clr clr_red">		</span>41 <span class="addr">Житомирська 43 кв. 197 (таблетка)</span></li>
+		<li><span class="clr clr_white">	</span>42 <span class="addr">Пушкіна 72, Ейсмонт</span></li>
+		<li><span class="clr">				</span>43 <span class="addr"><i class="kod">(код - 1986)</i> Косогорського 16</span></li>
+		<li><span class="clr clr_red">		</span>44 <span class="addr"><i>с. Іванківці</i>, Шкільна 36</span></li>
+		<li><span class="clr clr_red">		</span>45 <span class="addr">Гранична 4, котельня</span></li>
+		<li><span class="clr clr_black">	</span>46 <span class="addr">Житомирська 84-б, СТО (написано на брелку)</span></li>
+		<li><span class="clr clr_yellow">	</span>47 <span class="addr">Ватутіна (Ватутина), 49, Тимофейчук (тільки 1 етаж і підвал)</span></li>
+		<li><span class="clr clr_yellow">	</span>48 <span class="addr">пров. Ботанічний 27, будинок</span></li>
+		<li><span class="clr">				</span>49 <span class="addr"><i class="kod">(код 259)</i> Красіна 1 кв. 15</span></li>
+		<li><span class="clr">				</span>50 <span class="addr"><i class="kod">(код 359)</i> Європейська 11 кв. 18</span></li>
+
+		<li><span class="clr">				</span>51 <span class="addr"></span></li>
+		<li><span class="clr clr_green">	</span>52 <span class="addr">Чорновола 9, "Правова допомога"</span></li>
+		<li><span class="clr clr_yellow">	</span>53 <span class="addr">Червоноармійська 55</span></li>
+		<li><span class="clr clr_blue">		</span>54 <span class="addr">Крупської 8, Кочан</span></li>
+		<li><span class="clr clr_black">	</span>55 <span class="addr"><i>с. Іванківці</i> Небесної Сотні 2</span></li>
+		<li><span class="clr clr_blue">		</span>56 <span class="addr">пров. Старікова 11 кв. 66</span></li>
+		<li><span class="clr clr_red">		</span>57 <span class="addr"><i class="kod">(код - 90)</i>Житомирська 43 кв. 27, Ніжнікова</span></li>
+		<li><span class="clr clr_red">		</span>58 <span class="addr"><i class="kod">(код 85)</i> Степана Бандери (Чкалова) 15а</span></li>
+		<li><span class="clr clr_black">	</span>59 <span class="addr"><i class="kod">(код - 90)</i> Житомирська 43 кв. 29 Малаховська</span></li>
+		<li><span class="clr clr_red">		</span>60 <span class="addr"><i>с. Радянське</i> Бердичівська 25, Романенко</span></li>
+		<li><span class="clr">				</span>61 <span class="addr"><i class="kod">(код 236)</i> Старікова 13 кв. 66</span></li>
+		<li><span class="clr clr_white">	</span>62 <span class="addr">Європейська 107, ТОВ "Ласка Бердичів"</span></li>
+		<li><span class="clr clr_white">	</span>63 <span class="addr">Січових Стрільців (Комсомольська) 21, д/с</span></li>
+		<li><span class="clr clr_green">	</span>64 <span class="addr">Шевченко 16, ТЦ "Шевченківський"</span></li>
+		<li><span class="clr clr_blue">		</span>65 <span class="addr">Лупова 12 кв. 17</span></li>
+		<li><span class="clr">				</span>66 <span class="addr">Красіна 8, "Глоріон"</span></li>
+		<li><span class="clr clr_blue">		</span>67 <span class="addr">Одеська 38 кв. 44, Чумак</span></li>
+		<li><span class="clr clr_yellow">	</span>68 <span class="addr">Урожайна 24</span></li>
+		<li><span class="clr clr_white">	</span>69 <span class="addr">Житомирська 13, Ринок "Полісся Продукт"</span></li>
+		<li><span class="clr clr_yellow">	</span>70 <span class="addr">Іллічевська 36, "Зорепад"</span></li>
+		<li><span class="clr clr_green_sal"></span>71 <span class="addr"><i class="kod">(код 358)</i> Ватутіна 18/1 ???</span></li>
+		<li><span class="clr clr_blue">		</span>72 <span class="addr">Фабріциуса, 53 а (Варшавська) Кущак</span></li>
+		<li><span class="clr clr_yellow">	</span>73 <span class="addr">пров. Поштовий, 8 а кв. 18</span></li>
+		<li><span class="clr clr_green_sal"></span>74 <span class="addr">пров. Трудовий, 22. Фурсал</span></li>
+		<li><span class="clr">				</span>75 <span class="addr"><i class="kod">(код 29)</i> Гришківці Травнева 6</span></li>
+		<li><span class="clr clr_green_sal"></span>76 <span class="addr">Білопольська, 19 будинок Тимчинський</span></li>
+		<li><span class="clr">				</span>77 <span class="addr"><i class="kod">(код 137)</i> Карла Маркса, 22 кв. 71</span></li>
+		<li><span class="clr clr_red">		</span>78 <span class="addr">Гранична, 2а будинок Ковальчук</span></li>
+		<li><span class="clr clr_blue">		</span>79 <span class="addr"><i>Гришківці</i> Крилова 27</span></li>
+		<li><span class="clr">				</span>80 <span class="addr"><i class="kod">(код 38)</i> Руська, 12 кв. 120</span></li>
+		<li><span class="clr">				</span>81 <span class="addr"><i class="kod">(код 27)</i> Ново-Іванівська 46 кв. 7</span></li>
+		<li><span class="clr">				</span>82 <span class="addr"><i class="kod">(код З8)</i> Вінницька, 59 кв.31 (Капралюк)</span></li>
+		<li><span class="clr">				</span>83 <span class="addr">Одеська, 60 кв. 67</span></li>
+		<li><span class="clr clr_red">		</span>84 <span class="addr">Сестер Сломницьких (Здоровья) 36/49 кв.1 Шпічак</span></li>
+		<li><span class="clr clr_red">		</span>85 <span class="addr"><i>с. Хажин</i> будинок Чорноус</span></li>
+		<li><span class="clr">				</span>86 <span class="addr"><i class="kod">(код 248)</i> «Тасканія Гріль» (вокзал)</span></li>
+		<li><span class="clr clr_black">	</span>87 <span class="addr">Житомирська, 20 кв. 25 (Гуль)</span></li>
+		<li><span class="clr clr_yellow">	</span>88 <span class="addr">Хажинська, 13</span></li>
+		<li><span class="clr clr_green_sal"></span>89 <span class="addr">Осипенка, 24 Андрійчук</span></li>
+		<li><span class="clr clr_green">	</span>90 <span class="addr">Нізгурецька, 157, Кругліков</span></li>
+		<li><span class="clr clr_yellow">	</span>91 <span class="addr">Ново-Іванівська, 19 кв. 10 Кравець</span></li>
+		<li><span class="clr clr_blue">		</span>92 <span class="addr"></span></li>
+		<li><span class="clr">				</span>93 <span class="addr"><i class="kod">(код 138)</i> 30 річчя перемоги, 5 кв. 66</span></li>
+		<li><span class="clr">				</span>94 <span class="addr"><i class="kod">(код 76)</i> Карасгоянової (Мазепи), 29 кв. 65</span></li>
+		<li><span class="clr clr_green">	</span>95 <span class="addr"><i>Гришківці</i> Крилова 29, Кирилюк</span></li>
+		<li><span class="clr clr_white">	</span>96 <span class="addr">пров. Ветеринарний 5 «Венбест»</span></li>
+		<li><span class="clr clr_blue">		</span>97 <span class="addr">Корольова 20, Пунко</span></li>
+		<li><span class="clr clr_violet">	</span>98 <span class="addr">2 пров. Південний, Козел</span></li>
+		<li><span class="clr clr_blue">		</span>99 <span class="addr"><i>Гришківці</i> Житніченка 57, Захарчук</span></li>
+		<li><span class="clr clr_blue">		</span>100 <span class="addr">Ковпака (Прорізна) 28 кв. 1</span></li>
+		<li><span class="clr">				</span>101 <span class="addr"><i class="kod">(код 3678)</i> Європейська 55 кв. 7</span></li>
+		<li><span class="clr clr_white">	</span>102 <span class="addr">Вінницька, 65 кв. 23</span></li>
+		<li><span class="clr clr_blue">		</span>103 <span class="addr"><i>Гришківці</i> Гагаріна 15</span></li>
+		<li><span class="clr clr_violet">	</span>104 <span class="addr"><i>Низгірці</i> Бердичівська 103</span></li>
+		<li><span class="clr">				</span>105 <span class="addr"><i class="kod">(код 50)</i> Дж. Кокрада 2 кв. 5</span></li>
+		<li><span class="clr clr_white">	</span>106 <span class="addr">Володимирська 12, (Лабораторія. Явір, ворота)</span></li>
+		<li><span class="clr">				</span>	   <span class="addr"><i class="kod">(код подъезда 789)</i> Шевченка 23 кв. 41 (3-й эт.). Квартира Петренко А.Ф.</span></li>
+		<li><span class="clr">				</span>    <span class="addr"><i class="kod">(код ???)</i> Сестер Сломницких (Здоровья) 2 кв. 81. Квартира Гуменюк О.Н.</span></li>
+		<li><span class="clr">				</span>    <span class="addr"><i class="kod">(код подъезда 359)</i> Здоровья 2 кв. 87. Квартира Стецюк И.В.</span></li>
+		<li><span class="clr">				</span>    <span class="addr"><i class="kod">(код калитки 7)</i> <i>Гришковцы</i>, ул. Старый путь 2а. Дом Глибко Ю.Н.</span></li>
+		<li><span class="clr">				</span>    <span class="addr"><i class="kod">(код калитки 5)</i> <i>Гришковцы</i>, ул. Старый путь 51. Дом Олянюк Я.В.</span></li>
+
+<!--		<li><span class="addr"><i>г. Бердичев</i>, ул. Железнодорожная, 32, Гараж №4</span><span class="obj_num_electric">7782 (1)</span></li>-->
+<!--		<li><a href="data/zitom_78.html"><span class="addr"><i>г. Бердичев</i>, ул. Житомирская, 78, Автоцентр</span><span class="obj_num_electric"></span></a></li>-->
+	</ol>
+</body>
+</html>
