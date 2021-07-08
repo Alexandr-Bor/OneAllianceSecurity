@@ -1,47 +1,25 @@
 import java.io.*;
 import java.util.ArrayList;
 
-public class OneAllianceSecurity {
-    private static final String KEYS_FILE = "D:\\Docs\\пультова охорона\\dbkeys.txt";
-    private static final String HTML_FILE = "D:\\Docs\\пультова охорона\\all_key_j.html";
+/**
+ * Test
+ */
+public class OneAllianceSecurityObject {
+    private static final String OBJECTS_FILE = "D:\\Docs\\OneAllianceSecurity\\dbobjects.txt";
+    private static final String OBJECTS_FOLDER = "D:\\Docs\\OneAllianceSecurity\\data\\";
     private static final String START_HTML_FILE = "<!DOCTYPE html>\n" +
-            "<html lang=\"en\">\n" +
-            "<head>\n" +
-            "\t<meta charset=\"UTF-8\">\n" +
-            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-            "\t<link rel=\"stylesheet\" href=\"style/style.css\">\n" +
-            "\n" +
-            "\t<script src=\"style/libs/jQuery_1.12.4.min.js\"></script>\n" +
-            "\t<script src=\"style/js.js\"></script>\n" +
-            "\t<script src=\"style/js_obj.js\"></script>\n" +
-            "\n" +
-            "\t<title>Ключи и Коды</title>\n" +
-            "</head>\n" +
-            "\n" +
-            "<body>\n" +
-            "\t<section id=\"header_section\">\n" +
-            "\t\t<nav class=\"navigation\">\n" +
-            "\t\t\t<ul>\n" +
-            "\t\t\t\t<li><a href=\"all_objects.html\">Объекты</a></li>\n" +
-            "\t\t\t\t<li><span>Ключи и Коды</span></li>\n" +
-            "\t\t\t</ul>\n" +
-            "\t\t</nav>\n" +
-            "\n" +
-            "\t\t<form class=\"form_sorting\" action=\"\">\n" +
-            "\t\t\t<input type=\"text\" id=\"searchObj\">\n" +
-            "\t\t\t<label for=\"searchObj\">\n" +
-            "\t\t\t\t<span id=\"clear_form\">Clear</span>\n" +
-            "\t\t\t</label>\n" +
-            "\t\t</form>\n" +
-            "\t</section>\n" +
-            "\n" +
-            "\t<ol class=\"all_objects_key\" id=\"all_objects_security\">";
-    private static final String END_HTML_FILE = "\t</ol>\n" +
-            "</body>\n" +
-            "</html>";
+            "<html lang=\"en\"><head>\n" +
+            "<meta charset=\"UTF-8\">\n" +
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
+            "<link rel=\"stylesheet\" href=\"../style/style.css\">\n" +
+            "<script src=\"../style/libs/jQuery_1.12.4.min.js\"></script>\n" +
+            "<script type=\"text/javascript\">if (screen.width > 700) document.write ('<script type=\"text/javascript\" src=\"../style/js.js\" ></' + 'script>');</script>\n" +
+            "<title>@@@@@@@</title>\n" +
+            "</head><body>";
+    private static final String END_HTML_FILE = "</body></html>";
 
     public static void main(String[] args) {
-        ArrayList<String[]> keys = readKeys();
+        ArrayList<String[]> keys = readObjects();
         writeHTMLFile(keys);
     }
 
@@ -49,10 +27,10 @@ public class OneAllianceSecurity {
      *
      * @return
      */
-    private static ArrayList<String[]> readKeys() {
+    private static ArrayList<String[]> readObjects() {
         ArrayList<String[]> result = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(KEYS_FILE))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(OBJECTS_FILE))) {
 
             while (true) {
 
@@ -96,7 +74,7 @@ public class OneAllianceSecurity {
      */
     private static void writeHTMLFile(ArrayList<String[]> keys) {
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(HTML_FILE))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(OBJECTS_FOLDER))) {
 
             bw.write(START_HTML_FILE);
 

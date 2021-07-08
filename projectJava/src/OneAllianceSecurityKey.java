@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.ArrayList;
 
-public class OneAllianceSecurity {
-    private static final String KEYS_FILE = "D:\\Docs\\пультова охорона\\dbkeys.txt";
-    private static final String HTML_FILE = "D:\\Docs\\пультова охорона\\all_key_j.html";
+public class OneAllianceSecurityKey {
+    private static final String KEYS_FILE = "D:\\Docs\\OneAllianceSecurity\\dbkeys.txt";
+    private static final String HTML_FILE = "D:\\Docs\\OneAllianceSecurity\\all_key_j.html";
     private static final String START_HTML_FILE = "<!DOCTYPE html>\n" +
             "<html lang=\"en\">\n" +
             "<head>\n" +
@@ -22,7 +22,7 @@ public class OneAllianceSecurity {
             "\t<section id=\"header_section\">\n" +
             "\t\t<nav class=\"navigation\">\n" +
             "\t\t\t<ul>\n" +
-            "\t\t\t\t<li><a href=\"all_objects.html\">Объекты</a></li>\n" +
+            "\t\t\t\t<li><a href=\"all_objects_j.html\">Объекты</a></li>\n" +
             "\t\t\t\t<li><span>Ключи и Коды</span></li>\n" +
             "\t\t\t</ul>\n" +
             "\t\t</nav>\n" +
